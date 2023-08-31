@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Advanced Function - part 1</title>
+  </head>
+  <body>
+    <script>
+      /*
+      greetings();
+      function greetings() {
+        console.log("Hello");
+      }
+
+      greetings();
+
+      const num = 2;
+      const function1 = function greetings() {
+        console.log("hello2");
+      };
+
+      console.log(function1);
+      console.log(typeof function1);
+
+      function1();
+
+      const object1 = {
+        num: 2,
+        fun: function () {
+          console.log("hello3");
+        },
+      };
+      object1.fun();
+
+      function display(param) {
+        console.log(param);
+      }
+      display(2);
+
+      function run(param) {
+        param();
+      }
+
+      run(function () {
+        console.log("hello4");
+      });
+      */
+
+      /*
+      NOTE: This function
+      Asynchronous Code:
+      - Won't wait for a line to finish
+      before going to the next line
+      */
+      /*
+      setTimeout(function () {
+        console.log("Timeout");
+        console.log("Timeout 2");
+      }, 3000);
+
+      console.log("next line!");
+      
+      setInterval(function () {
+        console.log("interval");
+      }, 3000);
+
+      console.log("next line! 2");
+      */
+
+      const regularFunction = function(param, param2) {
+        console.log('Hello regular function');
+        return 5
+      }
+      regularFunction()
+
+      const arrowFunction = (param, param2) => {
+        console.log('Hello arrow function');
+        return 5
+      }
+      arrowFunction();
+
+      const oneParam = param => {
+        console.log(param + 1)
+      };
+
+      oneParam(2);
+
+      const oneLine = () => 2 + 3;
+      console.log(oneLine());
+    </script>
+  </body>
+</html>

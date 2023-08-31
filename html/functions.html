@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+</head>
+<body>
+    <script>
+        /*
+        function function1() {
+            console.log("Hello, world!");
+            console.log(2 + 2);
+        }
+        function1();
+        function1();
+        */
+        
+        /*
+        function calcualteTax(cost, taxPercent = 0.1) {
+            console.log(cost * taxPercent);
+        }
+        calcualteTax(2000, 0.2);
+        calcualteTax(5000);
+        */
+
+        function myFucntion(takeParameters){
+            takeParameters.make = "Ninja h2r";
+        }
+        mycar =  {
+            make: "Toyota",
+            model: "Corolla",
+            year: 2020,
+            price: 1000000,
+            tax: 0.1,
+        }
+        console.log(mycar.make);
+        myFucntion(mycar);
+        console.log(mycar.make);
+    </script>
+</body>
+</html>
